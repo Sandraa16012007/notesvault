@@ -1,0 +1,105 @@
+<!-- Discussion Panel Page (HTML) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NotesVault - Discussion Panel</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="../assets/index/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styling/discussion.css" />
+    <link rel="stylesheet" href="../styling/base.css" />
+    <link rel="stylesheet" href="../styling/variables.css" />
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <main class="discussion-panel">
+
+        <!-- Layout -->
+
+        <div class="sidebar-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="box"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="bottom-btn"></div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main">
+
+                <div class="banner">
+                    <!-- Hero Section -->
+                    <section class="discussion-hero">
+                        <div class="container">
+                            <h1>Student Discussion Panel</h1>
+                            <p class="subtitle">
+                            Ask Questions, Share Insights & Learn Together With Your Peers!
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button class="search-btn">Search</button>
+                    <button class="add-post-btn">Add new post +</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="avatar"></div>
+                        <div style="flex:1;" id="filler">
+                            <p id="username">Sandra16012007</p>
+                            <p id="time">Posted <span id="time-posted">8h</span> ago</p>
+                        </div>
+                    </div>
+                    <p id="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="card-footer">
+                        <div class="footer-btn save"></div>
+                        <div class="footer-btn share"></div>
+                        <div class="footer-btn reply"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="avatar"></div>
+                        <div style="flex:1;"></div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="footer-btn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript -->
+    <script src="../scripts/script.js" defer></script>
+
+</body>
+</html>

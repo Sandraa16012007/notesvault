@@ -1,0 +1,219 @@
+/* Discussion panel (CSS) */
+
+.discussion-panel {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 20px;
+}
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .btn {
+      padding: 6px 14px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-login {
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+
+    .btn-signup {
+      background: #057a28;
+      color: #fff;
+    }
+
+    /* Layout */
+    .sidebar-container {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 280px;
+      background: #fff;
+      border-right: 1px solid #ddd;
+      padding: 15px;
+      padding-right: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: calc(100vh - 50px);
+    }
+
+    .sidebar .box {
+      height: 40px;
+      background: #e0e0e0;
+      border-radius: 6px;
+    }
+
+    .sidebar .icon {
+      height: 25px;
+      width: 25px;
+      background: #e0e0e0;
+      border-radius: 4px;
+    }
+
+    .sidebar .bottom-btn {
+      margin-top: auto;
+      height: 35px;
+      background: #ccc;
+      border-radius: 6px;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      padding: 20px;
+      padding-top: 10px;
+      padding-left: 25px;
+    }
+
+    .banner {
+      background: #057a28;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 6px;
+      margin-bottom: 100px;
+      border-radius: 12px;
+    }
+
+    /* Hero Section */
+    .discussion-hero {
+        border-radius: 15px;
+        background: linear-gradient(
+            135deg,
+            var(--primary-500) 0%,
+            var(--primary-700) 100%
+        );
+        padding: 3rem 0 3rem 0;
+        text-align: center;
+    }
+
+    .discussion-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    margin: 0;
+    }
+
+    .discussion-hero .subtitle {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    color: var(--white);
+    max-width: 600px;
+    margin: 0 auto;
+    }
+
+    .discussion-hero .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .search-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .search-bar button {
+      padding: 10px 16px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.141);
+    }
+
+    .add-post-btn {
+      background: #057a28;
+      color: #fff;
+      font-size: 15px;
+    }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .avatar {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #ccc;
+    }
+
+    #filler p{
+        margin: 0;
+        font-size: 17px;
+        color: #333;
+    }
+     #filler #username{
+        font-size: 18px;
+        color: #333;
+        font-weight: bold;
+    }
+    #filler #time{
+        font-size: 14px;
+        color: #888;
+    }
+    #filler #time-posted{
+        font-weight: bold;
+    }
+    #post-content {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+      margin-left:8px;
+      margin-top:5px;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .footer-btn {
+      height: 25px;
+      width: 60px;
+      background: #ddd;
+      border-radius: 6px;
+    }
