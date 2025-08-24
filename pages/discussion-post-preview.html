@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="../styling/discussion.css" />
     <link rel="stylesheet" href="../styling/base.css" />
     <link rel="stylesheet" href="../styling/variables.css" />
+    <link rel="stylesheet" href="../styling/discussion-post-preview.css" />
+
   </head>
 
   <body>
@@ -55,8 +57,7 @@
 
                 <div class="discussions">
                     <div class="discussion-header">
-                    <span>Current Discussions</span>
-                    <img class="toggle">
+                        <span>Current Discussions</span>
                     </div>
                     <div class="discussion-list">
                     <a href="#" class="discussion-item">
@@ -77,26 +78,18 @@
                     <button class="join-new">Join a new discussion</button>
                 </div>
             </div>
+        </div>
 
-            <!-- Main Content -->
-            <div class="main">
+        <!-- Main Content -->
+        <div class="main">
 
-                <div class="banner">
-                    <!-- Hero Section -->
-                    <section class="discussion-hero">
-                        <div class="container">
-                            <h1>Student Discussion Panel</h1>
-                            <p class="subtitle">
-                            Ask Questions, Share Insights & Learn Together With Your Peers!
-                            </p>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="search-bar">
-                    <input type="text" placeholder="Search...">
-                    <button class="search-btn">Search</button>
-                    <button class="add-post-btn">Add new post +</button>
+                <div class="back-banner">
+                    <div class="back-link-button">
+                        <img src="../assets/discussion/left-arrow-icon.png" alt="Left arrow icon">
+                    </div>
+                    <p class="back-link">
+                    Back to posts
+                    </p>
                 </div>
 
                 <div class="card">
@@ -122,17 +115,59 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-header">
-                        <div class="avatar"></div>
-                        <div style="flex:1;"></div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="footer-btn"></div>
+                <div class="reply-box-container">
+                    <textarea class="reply-textbox" placeholder="Add your reply..."></textarea>
+                    <div class="reply-actions">
+                        <button class="cancel-button">Cancel</button>
+                        <button class="reply-button">Submit</button>
                     </div>
                 </div>
-            </div>
+
+                <div class="posted-replies">
+                    <h4>Replies</h4>
+                    <div class="reply-item">
+                        <img class="avatar" src="https://via.placeholder.com/35" alt="Avatar">
+                        <div class="reply-content">
+                            <div class="reply-header">
+                                <span class="username">John Doe</span>
+                                <span class="time">2h ago</span>
+                            </div>
+                            <p>This is a sample reply posted by someone.</p>
+                            <div class="reply-actions-footer">
+                                <div class="footer-btn-upvote">
+                                    <img src="../assets/discussion/upvote-icon.png" alt="Upvote Icon">
+                                </div>
+                                <div class="footer-btn-reply">
+                                    <img src="../assets/discussion/reply-icon.png" alt="Reply Icon">
+                                    <p>Post reply</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reply-item">
+                        <img class="avatar" src="https://via.placeholder.com/35" alt="Avatar">
+                        <div class="reply-content">
+                            <div class="reply-header">
+                                <span class="username">Jane Smith</span>
+                                <span class="time">30m ago</span>
+                            </div>
+                            <p>Another example reply. Nice discussion!</p>
+                            <div class="reply-actions-footer">
+                                <div class="footer-btn-upvote">
+                                    <img src="../assets/discussion/upvote-icon.png" alt="Upvote Icon">
+                                </div>
+                                <div class="footer-btn-reply">
+                                    <img src="../assets/discussion/reply-icon.png" alt="Reply Icon">
+                                    <p>Post reply</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
         </div>
+
+            
 
     </main>
     <!-- Footer -->
