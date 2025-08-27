@@ -2,7 +2,11 @@
 
 This leaderboard tracks contributors who have completed issues labeled as `level1`, `level2`, or `level3`, along with their merged pull requests.
 
+<<<<<<< HEAD
 *Last updated: 2025-08-24*
+=======
+*Last updated: 2025-08-27*
+>>>>>>> upstream/main
 
 | Username | Level 1 | Level 2 | Level 3 | PRs Merged |
 |----------|---------|---------|---------|-------------|
