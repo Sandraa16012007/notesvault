@@ -39,16 +39,16 @@
         <!-- Sidebar -->
             <div class="sidebar">
                 <nav class="menu">
-                    <a href="#" class="menu-item">
+                    <a href="discussion.html" class="menu-item" class="home-link">
                     <img class="icon" src="../assets/discussion/home-icon.png" alt="Home Icon">
                     Home
                     </a>
-                    <a href="#" class="menu-item">
-                    <img class="icon" src="../assets/discussion/discussion-icon.png" alt="Discussion Icon">
+                    <a href="" class="menu-item">
+                    <img class="icon" src="../assets/discussion/discussion-icon.png" alt="Discussion Icon" class="your-posts-link">
                     Your Posts
                     </a>
-                    <a href="#" class="menu-item">
-                    <img class="icon" src="../assets/discussion/tag-grey-icon.png" alt="Tag Icon">
+                    <a href="" class="menu-item">
+                    <img class="icon" src="../assets/discussion/tag-grey-icon.png" alt="Tag Icon" class="saved-link">
                     Saved
                     </a>
                 </nav>
@@ -94,45 +94,41 @@
                 </div>
 
                 <div class="search-bar">
-                    <input type="text" placeholder="Search...">
+                    <input id ="search-input" type="text" placeholder="Search...">
                     <button class="search-btn">Search</button>
                     <button class="add-post-btn">Add new post +</button>
                 </div>
 
-                <div class="card">
-                    <div class="card-header">
-                        <div class="avatar"></div>
-                        <div style="flex:1;" id="filler">
-                            <p id="username">Sandra16012007</p>
-                            <p id="time">Posted <span id="time-posted">8h</span> ago</p>
-                        </div>
-                    </div>
-                    <p id="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="card-footer">
-                        <div class="footer-btn-save">
-                            <img src="../assets/discussion/tag-white-icon.png" alt="Save Icon">
-                        </div>
-                        <div class="footer-btn-upvote">
-                            <img src="../assets/discussion/upvote-icon.png" alt="Upvote Icon">
-                        </div>
-                        <div class="footer-btn-reply">
-                            <img src="../assets/discussion/reply-icon.png" alt="Reply Icon">
-                            <p>Post reply</p>
-                        </div>
-                    </div>
-                </div>
+                <div id="posts-container">
 
-                <div class="card">
-                    <div class="card-header">
-                        <div class="avatar"></div>
-                        <div style="flex:1;"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="avatar"></div>
+                            <div style="flex:1;">
+                                <p class="username">Sandra16012007</p>
+                                <p class="time">Posted on <span class="time-posted">23 Aug, 2025</span></p>
+                            </div>
+                        </div>
+                        <p class="post-title">How to implement a binary search tree in Python?</p>
+                        <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="card-footer">
+                            <div class="footer-btn-save">
+                                <img src="../assets/discussion/tag-white-icon.png" alt="Save Icon">
+                            </div>
+                            <div class="footer-btn-upvote">
+                                <img src="../assets/discussion/upvote-icon.png" alt="Upvote Icon">
+                                <span class="upvotes-count">24</span>
+                            </div>
+                            <div class="footer-btn-reply">
+                                <img src="../assets/discussion/reply-icon.png" alt="Reply Icon">
+                                <p>Post reply</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <div class="footer-btn"></div>
-                    </div>
+
                 </div>
             </div>
-        </div>
+        
 
     </main>
     <!-- Footer -->
@@ -140,6 +136,77 @@
 
     <!-- JavaScript -->
     <script src="../scripts/script.js" defer></script>
+    <script src="../scripts/discussion.js" defer></script>
 
 </body>
 </html>
+
+
+<!-- for your posts (empty)
+
+<div class="main">
+    <div class="card empty-state-card">
+    <div class="empty-state-icon">
+        <svg width="56" height="56" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#f3faf5"/><path d="M7 8h10M7 12h4m-4 4h6" stroke="#418e52" stroke-width="2" stroke-linecap="round"/></svg>
+    </div>
+    <h2 class="empty-state-title">No Posts Yet!</h2>
+    <p class="empty-state-text">You haven't added any posts yet. Click below to create your first post and join the discussion!</p>
+    <button class="primary-action-btn">Add New Post +</button>
+    </div>
+</div>
+
+
+.empty-state-card {
+    max-width: 480px;
+    margin: 70px auto 0;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    padding: 38px 36px 32px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.empty-state-icon {
+    margin-bottom: 18px;
+}
+
+.empty-state-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2b5d36;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.empty-state-text {
+    color: #4d5d63;
+    font-size: 16px;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+.primary-action-btn {
+    background: linear-gradient(90deg, #23964d 0%, #15713d 100%);
+    color: #fff;
+    font-weight: 600;
+    padding: 13px 32px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px rgba(35,150,77,0.1);
+}
+
+.primary-action-btn:hover {
+    background: linear-gradient(90deg, #23964d 0%, #15713d 100%);
+    box-shadow: 0 4px 12px rgba(21,113,61,0.2);
+
+}
+
+
+-->
+

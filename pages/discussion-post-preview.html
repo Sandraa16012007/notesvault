@@ -42,15 +42,15 @@
             <div class="sidebar">
                 <nav class="menu">
                     <a href="#" class="menu-item">
-                    <img class="icon" src="../assets/discussion/home-icon.png" alt="Home Icon">
+                    <img class="icon" src="../assets/discussion/home-icon.png" alt="Home Icon" class="home-link">
                     Home
                     </a>
                     <a href="#" class="menu-item">
-                    <img class="icon" src="../assets/discussion/discussion-icon.png" alt="Discussion Icon">
+                    <img class="icon" src="../assets/discussion/discussion-icon.png" alt="Discussion Icon" class="your-posts-link">
                     Your Posts
                     </a>
                     <a href="#" class="menu-item">
-                    <img class="icon" src="../assets/discussion/tag-grey-icon.png" alt="Tag Icon">
+                    <img class="icon" src="../assets/discussion/tag-grey-icon.png" alt="Tag Icon" class="saved-link">
                     Saved
                     </a>
                 </nav>
@@ -95,18 +95,20 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="avatar"></div>
-                        <div style="flex:1;" id="filler">
-                            <p id="username">Sandra16012007</p>
-                            <p id="time">Posted <span id="time-posted">8h</span> ago</p>
+                        <div style="flex:1;">
+                            <p class="username">Sandra16012007</p>
+                            <p class="time">Posted on <span class="time-posted">23 Aug, 2025</span></p>
                         </div>
                     </div>
-                    <p id="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="post-title">How to implement a binary search tree in Python?</p>
+                    <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="card-footer">
                         <div class="footer-btn-save">
                             <img src="../assets/discussion/tag-white-icon.png" alt="Save Icon">
                         </div>
                         <div class="footer-btn-upvote">
                             <img src="../assets/discussion/upvote-icon.png" alt="Upvote Icon">
+                            <span class="upvotes-count">24</span>
                         </div>
                         <div class="footer-btn-reply">
                             <img src="../assets/discussion/reply-icon.png" alt="Reply Icon">
@@ -119,7 +121,7 @@
                     <textarea class="reply-textbox" placeholder="Add your reply..."></textarea>
                     <div class="reply-actions">
                         <button class="cancel-button">Cancel</button>
-                        <button class="reply-button">Submit</button>
+                        <button class="submit-button">Submit</button>
                     </div>
                 </div>
 
@@ -129,8 +131,8 @@
                         <img class="avatar" src="https://via.placeholder.com/35" alt="Avatar">
                         <div class="reply-content">
                             <div class="reply-header">
-                                <span class="username">John Doe</span>
-                                <span class="time">2h ago</span>
+                                <span class="rep-username">John Doe</span>
+                                <span class="time">24 Aug, 2025</span>
                             </div>
                             <p>This is a sample reply posted by someone.</p>
                             <div class="reply-actions-footer">
@@ -148,8 +150,8 @@
                         <img class="avatar" src="https://via.placeholder.com/35" alt="Avatar">
                         <div class="reply-content">
                             <div class="reply-header">
-                                <span class="username">Jane Smith</span>
-                                <span class="time">30m ago</span>
+                                <span class="rep-username">Jane Smith</span>
+                                <span class="time">23 Aug, 2025</span>
                             </div>
                             <p>Another example reply. Nice discussion!</p>
                             <div class="reply-actions-footer">
@@ -175,6 +177,10 @@
 
     <!-- JavaScript -->
     <script src="../scripts/script.js" defer></script>
+    <script src="../scripts/discussion.js" defer></script>
 
 </body>
 </html>
+
+
+

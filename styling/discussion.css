@@ -149,24 +149,36 @@ body {
       background: #ccc;
     }
 
-    #filler p{
+   p{
         margin: 0;
         font-size: 17px;
         color: #333;
     }
-     #filler #username{
+      .username{
         font-size: 18px;
         color: #333;
         font-weight: bold;
+        margin:0;
     }
-    #filler #time{
+     .time{
         font-size: 14px;
         color: #888;
+        margin:0;
     }
-    #filler #time-posted{
+   .time-posted{
         font-weight: bold;
     }
-    #post-content {
+
+    .post-title{
+      font-size: 17px;
+      font-weight: 550;
+      margin-bottom: 10px;
+      color: #333;
+      margin-left:8px;
+      margin-top:13px;
+    }
+
+    .post-content {
       font-size: 16px;
       color: #555;
       margin-bottom: 20px;
@@ -183,11 +195,33 @@ body {
 
     .footer-btn-save,
     .footer-btn-upvote, .footer-btn-reply{
+      cursor: pointer;
       height: 40px;
       width: 39px;
       background: #ddd;
       border-radius: 6px;
     }
+
+     .footer-btn-save.active, .footer-btn-upvote.active {
+        color: white; /* icon turns white */
+        background-color: green !important;  /* background becomes green */
+      }
+
+    .footer-btn-upvote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 65px;
+  background: #ddd;
+  border-radius: 6px;
+}
+.upvotes-count {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-right:6px;
+}
     
     .footer-btn-reply{
       width: 120px;
