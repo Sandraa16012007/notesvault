@@ -203,3 +203,4 @@ function addPost() {
   localStorage.setItem("posts", JSON.stringify(posts));
   window.location.href = "../pages/discussion.html"; // Redirect after adding
 }
+
