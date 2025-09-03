@@ -8,6 +8,7 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Last updated: 2025-08-24*
 =======
 *Last updated: 2025-08-27*
@@ -26,6 +27,9 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 >>>>>>> upstream/main
 =======
 *Last updated: 2025-09-02*
+>>>>>>> upstream/main
+=======
+*Last updated: 2025-09-03*
 >>>>>>> upstream/main
 
 | Username | Level 1 | Level 2 | Level 3 | PRs Merged |
