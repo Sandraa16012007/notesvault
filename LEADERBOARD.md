@@ -10,6 +10,7 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Last updated: 2025-08-24*
 =======
 *Last updated: 2025-08-27*
@@ -34,6 +35,9 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 >>>>>>> upstream/main
 =======
 *Last updated: 2025-09-05*
+>>>>>>> upstream/main
+=======
+*Last updated: 2025-09-06*
 >>>>>>> upstream/main
 
 | Username | Level 1 | Level 2 | Level 3 | PRs Merged |
@@ -63,6 +67,7 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 | [@deepanshu-prajapati01](https://github.com/deepanshu-prajapati01) | 2 | 0 | 0 | 1 |
 | [@Soumyosish](https://github.com/Soumyosish) | 2 | 0 | 0 | 1 |
 | [@adityai0](https://github.com/adityai0) | 0 | 1 | 0 | 2 |
+| [@Renu-code123](https://github.com/Renu-code123) | 0 | 1 | 0 | 1 |
 | [@AriyanPal08](https://github.com/AriyanPal08) | 0 | 1 | 0 | 1 |
 | [@Yug210705](https://github.com/Yug210705) | 1 | 0 | 0 | 1 |
 | [@Sagar1610Codes](https://github.com/Sagar1610Codes) | 1 | 0 | 0 | 1 |
